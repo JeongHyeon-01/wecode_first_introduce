@@ -16,7 +16,7 @@
     font-size: 100px;
     font-family: 'Jua', sans-serif;
     color: white;
-    
+    font-family: 'Roboto', sans-serif;
 }
 .text_h1{
     -webkit-text-stroke: 3px #1c40a0;
@@ -35,6 +35,7 @@
     font-size: 60px;
     padding-bottom: 15px;
     color:#1c40a0;
+    font-family: 'Roboto', sans-serif;
 }
 #me{
     border: 1px solid black;
@@ -44,6 +45,7 @@
     width: 100%;
     padding-top: 40px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .about_content {
@@ -149,3 +151,4 @@
 .content_box{
     padding: 0;
 }
+

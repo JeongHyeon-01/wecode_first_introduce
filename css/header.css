@@ -1,19 +1,96 @@
-nav {  
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-  
-nav li {
+.header_div {
+    height: 100vh;
+    position: fixed;
+    z-index: 444;
+    top: 100px;
+    left: 5%;
+ }
+ 
+ .header_div h1 a {
+    display: block;
+    width: 150px;
+    font-family: 'Roboto', sans-serif;
+ }
+ 
+ nav::before {
+    content: '';
+    display: block;
+    height: calc(100% - 300px);
+    width: 2px;
+    background-color: rgba(28, 64, 160, 0.5);
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+ }
 
-    display: inline-block;
-  
+ 
+ nav .gnb {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    font-size: 0;
+ }
+ 
+ nav .gnb li {
+    width: 30px;
+    height: 20%;
+    text-align: center;
+    position: relative;
+ }
+ 
+ nav .gnb li a {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #1c40a0;
+    background-color: #1c40a0;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+ }
+ 
+ nav .gnb li:hover a,
+ nav .gnb li.active a{
+    background-color: #1c40a0;
+
+ }
+ 
+ 
+ nav .gnb li:hover a {
+    background-color: #1c40a0;
+    color: #fff7f8;
+    width: 100px;
+    height: 20px;
+ }
+ 
+ 
+ nav .gnb li span {
+    display: none;
     font-size: 20px;
-  
-    padding: 20px;
-  
-  }
-  
-  
-  
+    color: #1c40a0;
+ }
+
+ 
+ nav .gnb li:hover span,
+ nav .gnb li.active a span {
+    display: block;
+    width: 100%;
+ }
+ 
+ nav .gnb li:hover span {
+    color: #fff7f8;
+ }
+ 
+ 
+ 
+ nav .gnb .mode img {
+    width: 100%;
+ }
